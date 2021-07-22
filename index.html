@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>tip-calculator</title>
+</head>
+
+<body>
+    <div id="container">
+        <header> <h1>TIP CALCULATOR </h1></header>
+        <div id="section1">
+            <h3>How much was your bill?</h3>
+            <p><input type="number" placeholder="Bill Amount" id="section1--amount"> <sub>$</sub></p>
+        </div>
+        <div id="section2">
+            <h3>How was your service?</h3>
+            <select name="service" id="section2--service">
+                <option value="null" disabled selected>Choose your option</option>
+                <option value="0.3">30% Outstanding</option>
+                <option value="0.2">20% Good</option>
+                <option value="0.15">15% It was OK</option>
+                <option value="0.1">10% Bad</option>
+                <option value="0.05">5% Terrible</option>
+            </select>
+        </div>
+        <div id="section3">
+            <h3>How many people are sharing the bill?</h3>
+            <p><input type="number" placeholder="Number of people" id="section3--people">People</p>
+        </div>
+        <button type="submit" id="button">CALCULATE TIP</button>
+        <div id="result"></div>
+        <button type="submit" id="reset" hidden="hidden">Calculate AGAIN</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
